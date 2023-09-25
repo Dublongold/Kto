@@ -1,6 +1,4 @@
-package one.two.three.kto.helpfull
-
-import one.two.three.kto.main_activity_extentions.QuizType
+package com.brbrasileoktoo.essporte.helpfull
 
 fun checkIfAnswerCorrect(isFootball: Boolean, questionNumber: Int, answerNumber: Int): Boolean {
     return if(isFootball) {

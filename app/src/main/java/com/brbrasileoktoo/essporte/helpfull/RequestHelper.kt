@@ -1,4 +1,4 @@
-package one.two.three.kto.helpfull
+package com.brbrasileoktoo.essporte.helpfull
 
 import android.content.Intent
 import android.net.Uri

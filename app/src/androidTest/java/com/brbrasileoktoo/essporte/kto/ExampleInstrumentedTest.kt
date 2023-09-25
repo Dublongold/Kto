@@ -1,4 +1,4 @@
-package one.two.three.kto
+package com.brbrasileoktoo.essporte.kto
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

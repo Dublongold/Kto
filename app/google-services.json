@@ -1,40 +1,21 @@
 {
   "project_info": {
-    "project_number": "979052901216",
-    "project_id": "bitgames-ffde7",
-    "storage_bucket": "bitgames-ffde7.appspot.com"
+    "project_number": "479850956787",
+    "project_id": "kto-esporte-app",
+    "storage_bucket": "kto-esporte-app.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:979052901216:android:51b5141057c00631dce405",
+        "mobilesdk_app_id": "1:479850956787:android:347572fe1e75261afd3486",
         "android_client_info": {
-          "package_name": "one.two.three.kto"
+          "package_name": "com.brbrasileoktoo.essporte"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCPPwpdt0mmHmbZF8oQn36A2o7Qmu87r8Y"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:979052901216:android:8f38f0f6e82536bcdce405",
-        "android_client_info": {
-          "package_name": "one.two.three.onewin"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCPPwpdt0mmHmbZF8oQn36A2o7Qmu87r8Y"
+          "current_key": "AIzaSyCDeukPIUoamaEpEZwOrnq6YELfaVUeQdU"
         }
       ],
       "services": {

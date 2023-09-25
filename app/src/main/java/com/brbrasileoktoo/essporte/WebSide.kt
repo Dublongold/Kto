@@ -1,4 +1,4 @@
-package one.two.three.kto
+package com.brbrasileoktoo.essporte
 
 import android.content.Intent
 import android.net.Uri
@@ -15,9 +15,9 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.lifecycle.lifecycleScope
-import one.two.three.kto.helpfull.BuildInBrowserInstaller
-import one.two.three.kto.helpfull.RequestHelper
-import one.two.three.kto.models.FirebaseDataContainer
+import com.brbrasileoktoo.essporte.helpfull.BuildInBrowserInstaller
+import com.brbrasileoktoo.essporte.helpfull.RequestHelper
+import com.brbrasileoktoo.essporte.models.FirebaseDataContainer
 
 
 class WebSide : AppCompatActivity() {
@@ -39,11 +39,11 @@ class WebSide : AppCompatActivity() {
         findViewById<ConstraintLayout>(R.id.activity_web).addView(buildInBrowser)
 
         beginnerBrowserLink = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            intent.getParcelableExtra("data", FirebaseDataContainer::class.java)?.link
+            intent.getParcelableExtra("data", FirebaseDataContainer::class.java)?.whereLet
         }
         else {
             @Suppress("DEPRECATION")
-            intent.getParcelableExtra<FirebaseDataContainer>("data")?.link
+            intent.getParcelableExtra<FirebaseDataContainer>("data")?.whereLet
         }
         installBuildInBrowser()
         buildInBrowser.loadUrl(beginnerBrowserLink!!)

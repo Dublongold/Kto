@@ -1,4 +1,4 @@
-package one.two.three.kto.main_activity_extentions
+package com.brbrasileoktoo.essporte.main_activity_extentions
 
 import android.util.TypedValue
 import android.view.Gravity
@@ -13,9 +13,9 @@ import androidx.core.content.res.ResourcesCompat
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import one.two.three.kto.MainApplication
-import one.two.three.kto.R
-import one.two.three.kto.helpfull.checkIfAnswerCorrect
+import com.brbrasileoktoo.essporte.MainApplication
+import com.brbrasileoktoo.essporte.R
+import com.brbrasileoktoo.essporte.helpfull.checkIfAnswerCorrect
 import kotlin.random.Random
 
 fun MainApplication.quizView() {
@@ -284,7 +284,7 @@ fun MainApplication.clearQuizView() {
     }
 }
 
-enum class QuizType() {
+enum class QuizType {
     FOOTBALL,
     BASKETBALL,
     MIXED

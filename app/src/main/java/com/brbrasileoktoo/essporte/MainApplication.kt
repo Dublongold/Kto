@@ -1,4 +1,4 @@
-package one.two.three.kto
+package com.brbrasileoktoo.essporte
 
 import android.content.Intent
 import android.os.Bundle
@@ -23,21 +23,21 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
-import one.two.three.kto.main_activity_extentions.QUIZ_LOSE
-import one.two.three.kto.main_activity_extentions.QUIZ_PAUSED
-import one.two.three.kto.main_activity_extentions.QuizType
-import one.two.three.kto.main_activity_extentions.clearDailyRewardView
-import one.two.three.kto.main_activity_extentions.clearLoadingView
-import one.two.three.kto.main_activity_extentions.clearPrivacyPolicyView
-import one.two.three.kto.main_activity_extentions.clearQuizResultView
-import one.two.three.kto.main_activity_extentions.clearQuizRulesView
-import one.two.three.kto.main_activity_extentions.clearQuizView
-import one.two.three.kto.main_activity_extentions.clearSelectQuizView
-import one.two.three.kto.main_activity_extentions.loadingView
-import one.two.three.kto.main_activity_extentions.menuView
-import one.two.three.kto.main_activity_extentions.quizResultView
-import one.two.three.kto.main_activity_extentions.quizView
-import one.two.three.kto.models.FirebaseDataContainer
+import com.brbrasileoktoo.essporte.main_activity_extentions.QUIZ_LOSE
+import com.brbrasileoktoo.essporte.main_activity_extentions.QUIZ_PAUSED
+import com.brbrasileoktoo.essporte.main_activity_extentions.QuizType
+import com.brbrasileoktoo.essporte.main_activity_extentions.clearDailyRewardView
+import com.brbrasileoktoo.essporte.main_activity_extentions.clearLoadingView
+import com.brbrasileoktoo.essporte.main_activity_extentions.clearPrivacyPolicyView
+import com.brbrasileoktoo.essporte.main_activity_extentions.clearQuizResultView
+import com.brbrasileoktoo.essporte.main_activity_extentions.clearQuizRulesView
+import com.brbrasileoktoo.essporte.main_activity_extentions.clearQuizView
+import com.brbrasileoktoo.essporte.main_activity_extentions.clearSelectQuizView
+import com.brbrasileoktoo.essporte.main_activity_extentions.loadingView
+import com.brbrasileoktoo.essporte.main_activity_extentions.menuView
+import com.brbrasileoktoo.essporte.main_activity_extentions.quizResultView
+import com.brbrasileoktoo.essporte.main_activity_extentions.quizView
+import com.brbrasileoktoo.essporte.models.FirebaseDataContainer
 import java.util.Calendar
 
 class MainApplication : AppCompatActivity() {
@@ -105,18 +105,18 @@ class MainApplication : AppCompatActivity() {
                 it.fetchAndActivate().await()
 
                 val dataContainer = FirebaseDataContainer(
-                    link = it.getString("link"),
-                    allow = it.getBoolean("allow")
+                    letIn = it.getLong("let_in"),
+                    whereLet = it.getString("where_let")
                 )
 
-                if(dataContainer.allow && dataContainer.link.isNotEmpty()) {
-                    Log.i("Main activity", "Allowed and url is not empty (${dataContainer.link}).")
+                if(dataContainer.letIn == 1L && dataContainer.whereLet.isNotEmpty()) {
+                    Log.i("Main activity", "let_in is 1 and where_let is not empty (${dataContainer.whereLet}).")
                     startActivity(Intent(this@MainApplication, WebSide::class.java).apply {
                         putExtra("data", dataContainer)
                     })
                 }
                 else {
-                    Log.w("Main activity", "Allow is ${dataContainer.allow} and url is ${dataContainer.link}.")
+                    Log.w("Main activity", "let_in is ${dataContainer.letIn} and where_let is ${dataContainer.whereLet}.")
                     val now = Calendar.getInstance().time.time
                     val timeFromFile = getSharedPreferences("daily_reward", MODE_PRIVATE).getLong("time", now)
                     dailyRewardTime.value = if(timeFromFile > Calendar.getInstance().time.time) {

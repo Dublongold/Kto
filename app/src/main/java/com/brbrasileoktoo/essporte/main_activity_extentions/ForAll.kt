@@ -1,4 +1,4 @@
-package one.two.three.kto.main_activity_extentions
+package com.brbrasileoktoo.essporte.main_activity_extentions
 
 import android.util.TypedValue
 import android.view.View
@@ -7,8 +7,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.res.ResourcesCompat
-import one.two.three.kto.MainApplication
-import one.two.three.kto.R
+import com.brbrasileoktoo.essporte.MainApplication
+import com.brbrasileoktoo.essporte.R
 
 fun MainApplication.setBackButton(action: (View) -> Unit = {}) {
     backButton = ImageButton(this)

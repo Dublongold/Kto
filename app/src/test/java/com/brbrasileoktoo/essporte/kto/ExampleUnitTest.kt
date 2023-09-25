@@ -1,4 +1,4 @@
-package one.two.three.kto
+package com.brbrasileoktoo.essporte.kto
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package one.two.three.kto.main_activity_extentions
+package com.brbrasileoktoo.essporte.main_activity_extentions
 
 import android.util.TypedValue
 import android.widget.ImageView
@@ -11,8 +11,8 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import kotlinx.coroutines.launch
-import one.two.three.kto.MainApplication
-import one.two.three.kto.R
+import com.brbrasileoktoo.essporte.MainApplication
+import com.brbrasileoktoo.essporte.R
 import java.util.Calendar
 
 fun MainApplication.dailyRewardView() {

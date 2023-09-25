@@ -1,4 +1,4 @@
-package one.two.three.kto.main_activity_extentions
+package com.brbrasileoktoo.essporte.main_activity_extentions
 
 import android.util.TypedValue
 import android.view.Gravity
@@ -10,8 +10,8 @@ import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.allViews
-import one.two.three.kto.MainApplication
-import one.two.three.kto.R
+import com.brbrasileoktoo.essporte.MainApplication
+import com.brbrasileoktoo.essporte.R
 
 fun MainApplication.quizResultView(resultCode: Int) {
     findViewById<ConstraintLayout>(R.id.main_activity).apply {

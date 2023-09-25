@@ -1,4 +1,4 @@
-package one.two.three.kto.main_activity_extentions
+package com.brbrasileoktoo.essporte.main_activity_extentions
 
 import android.util.TypedValue
 import android.view.Gravity
@@ -9,8 +9,8 @@ import android.widget.TextView
 import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.res.ResourcesCompat
-import one.two.three.kto.MainApplication
-import one.two.three.kto.R
+import com.brbrasileoktoo.essporte.MainApplication
+import com.brbrasileoktoo.essporte.R
 
 fun MainApplication.selectQuizView() {
     findViewById<ConstraintLayout>(R.id.main_activity).apply {
@@ -76,7 +76,8 @@ fun MainApplication.selectQuizView() {
                 clearSelectQuizView()
                 currentQuestion.value = 1
                 time.value = 300
-                selectedQuiz.value = QuizType.FOOTBALL
+                selectedQuiz.value =
+                    QuizType.FOOTBALL
                 quizView()
             }
         )
@@ -85,7 +86,8 @@ fun MainApplication.selectQuizView() {
                 clearSelectQuizView()
                 currentQuestion.value = 1
                 time.value = 300
-                selectedQuiz.value = QuizType.BASKETBALL
+                selectedQuiz.value =
+                    QuizType.BASKETBALL
                 quizView()
             }
         )
@@ -94,7 +96,8 @@ fun MainApplication.selectQuizView() {
                 clearSelectQuizView()
                 currentQuestion.value = 1
                 time.value = 300
-                selectedQuiz.value = QuizType.MIXED
+                selectedQuiz.value =
+                    QuizType.MIXED
                 quizView()
             }
         )

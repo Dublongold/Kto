@@ -1,10 +1,10 @@
-package one.two.three.kto.models
+package com.brbrasileoktoo.essporte.models
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class FirebaseDataContainer(
-    val allow: Boolean,
-    val link: String
+    val letIn: Long,
+    val whereLet: String
 ): Parcelable
