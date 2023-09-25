@@ -38,6 +38,7 @@ import com.brbrasileoktoo.essporte.main_activity_extentions.menuView
 import com.brbrasileoktoo.essporte.main_activity_extentions.quizResultView
 import com.brbrasileoktoo.essporte.main_activity_extentions.quizView
 import com.brbrasileoktoo.essporte.models.FirebaseDataContainer
+import com.onesignal.OneSignal
 import java.util.Calendar
 
 class MainApplication : AppCompatActivity() {
@@ -92,12 +93,14 @@ class MainApplication : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.application_main)
+        OneSignal.initWithContext(applicationContext, getString(R.string.one_signal))
         window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
         onBackPressedDispatcher.addCallback(MainOnBackPressedCallback())
         loadingView()
         lifecycleScope.launch {
             FirebaseApp.initializeApp(this@MainApplication)
+            OneSignal.Notifications.requestPermission(true)
 
             Firebase.remoteConfig.also {
                 it.reset().await()
