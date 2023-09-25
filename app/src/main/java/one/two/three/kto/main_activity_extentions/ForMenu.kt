@@ -6,13 +6,13 @@ import android.view.ViewGroup
 import androidx.appcompat.widget.AppCompatButton
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.res.ResourcesCompat
-import one.two.three.kto.MainActivity
+import one.two.three.kto.MainApplication
 import one.two.three.kto.R
 
-fun MainActivity.menuView() {
+fun MainApplication.menuView() {
     findViewById<ConstraintLayout>(R.id.main_activity).apply {
         setBackgroundResource(R.drawable.start_bg)
-        currentView.value = MainActivity.CurrentView.MENU
+        currentView.value = MainApplication.CurrentView.MENU
 
         fun createButton(buttonId: Int, bottomTo: Int, text: Int, action: (View) -> Unit): AppCompatButton {
             val resultButton = AppCompatButton(this@menuView)
@@ -57,7 +57,7 @@ fun MainActivity.menuView() {
     }
 }
 
-fun MainActivity.clearMenuView() {
+fun MainApplication.clearMenuView() {
     findViewById<ConstraintLayout>(R.id.main_activity).apply {
         removeView(menuPrivacyPolicyButton)
         removeView(menuDailyRewardButton)

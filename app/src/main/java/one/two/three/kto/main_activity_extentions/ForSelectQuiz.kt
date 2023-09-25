@@ -1,24 +1,21 @@
 package one.two.three.kto.main_activity_extentions
 
-import android.util.Log
 import android.util.TypedValue
 import android.view.Gravity
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.res.ResourcesCompat
-import androidx.core.view.marginBottom
-import one.two.three.kto.MainActivity
+import one.two.three.kto.MainApplication
 import one.two.three.kto.R
 
-fun MainActivity.selectQuizView() {
+fun MainApplication.selectQuizView() {
     findViewById<ConstraintLayout>(R.id.main_activity).apply {
         setBackgroundResource(R.drawable.main_bg)
-        currentView.value = MainActivity.CurrentView.SELECT_QUIZ
+        currentView.value = MainApplication.CurrentView.SELECT_QUIZ
 
         setBackButton {
             clearSelectQuizView()
@@ -110,7 +107,7 @@ fun MainActivity.selectQuizView() {
     }
 }
 
-fun MainActivity.clearSelectQuizView() {
+fun MainApplication.clearSelectQuizView() {
     findViewById<ConstraintLayout>(R.id.main_activity).apply {
         removeView(backButton)
         removeView(titleText)

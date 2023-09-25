@@ -6,14 +6,14 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.res.ResourcesCompat
-import one.two.three.kto.MainActivity
+import one.two.three.kto.MainApplication
 import one.two.three.kto.R
 
 
-fun MainActivity.loadingView() {
+fun MainApplication.loadingView() {
     findViewById<ConstraintLayout>(R.id.main_activity).apply {
         setBackgroundResource(R.drawable.start_bg)
-        currentView.value = MainActivity.CurrentView.LOADING
+        currentView.value = MainApplication.CurrentView.LOADING
 
         loadingLogoImage = ImageView(context)
         loadingText = TextView(context)
@@ -46,7 +46,7 @@ fun MainActivity.loadingView() {
     }
 }
 
-fun MainActivity.clearLoadingView() {
+fun MainApplication.clearLoadingView() {
     findViewById<ConstraintLayout>(R.id.main_activity).apply {
         removeView(loadingText)
         removeView(loadingLogoImage)

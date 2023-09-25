@@ -1,22 +1,19 @@
 package one.two.three.kto.main_activity_extentions
 
 import android.util.TypedValue
-import android.view.ViewGroup
 import android.widget.FrameLayout
-import android.widget.ImageButton
-import android.widget.ImageView
 import android.widget.ScrollView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.setPadding
-import one.two.three.kto.MainActivity
+import one.two.three.kto.MainApplication
 import one.two.three.kto.R
 
-fun MainActivity.privacyPolicyView() {
+fun MainApplication.privacyPolicyView() {
     findViewById<ConstraintLayout>(R.id.main_activity).apply {
         setBackgroundResource(R.drawable.main_bg)
-        currentView.value = MainActivity.CurrentView.PRIVACY_POLICY
+        currentView.value = MainApplication.CurrentView.PRIVACY_POLICY
 
         setBackButton {
             clearPrivacyPolicyView()
@@ -51,7 +48,7 @@ fun MainActivity.privacyPolicyView() {
     }
 }
 
-fun MainActivity.clearPrivacyPolicyView() {
+fun MainApplication.clearPrivacyPolicyView() {
     findViewById<ConstraintLayout>(R.id.main_activity).apply {
         removeView(backButton)
         removeView(titleText)

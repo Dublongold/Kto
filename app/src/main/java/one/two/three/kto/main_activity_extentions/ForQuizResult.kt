@@ -10,13 +10,13 @@ import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.allViews
-import one.two.three.kto.MainActivity
+import one.two.three.kto.MainApplication
 import one.two.three.kto.R
 
-fun MainActivity.quizResultView(resultCode: Int) {
+fun MainApplication.quizResultView(resultCode: Int) {
     findViewById<ConstraintLayout>(R.id.main_activity).apply {
         setBackgroundResource(R.drawable.main_bg)
-        currentView.value = MainActivity.CurrentView.QUIZ_RESULT
+        currentView.value = MainApplication.CurrentView.QUIZ_RESULT
 
         titleText = TextView(context)
         titleText.id = R.id.title_text
@@ -207,7 +207,7 @@ fun MainActivity.quizResultView(resultCode: Int) {
     }
 }
 
-fun MainActivity.clearQuizResultView() {
+fun MainApplication.clearQuizResultView() {
     findViewById<ConstraintLayout>(R.id.main_activity).apply {
         removeView(titleText)
         removeView(quizInfoContainer)

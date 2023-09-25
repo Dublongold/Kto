@@ -1,21 +1,19 @@
 package one.two.three.kto.main_activity_extentions
 
-import android.util.Log
 import android.util.TypedValue
 import android.view.Gravity
-import android.view.View
 import android.widget.TextView
 import androidx.appcompat.widget.AppCompatButton
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.res.ResourcesCompat
-import one.two.three.kto.MainActivity
+import one.two.three.kto.MainApplication
 import one.two.three.kto.R
 
-fun MainActivity.quizRulesView() {
+fun MainApplication.quizRulesView() {
 
     findViewById<ConstraintLayout>(R.id.main_activity).apply {
         setBackgroundResource(R.drawable.main_bg)
-        currentView.value = MainActivity.CurrentView.QUIZ_RULES
+        currentView.value = MainApplication.CurrentView.QUIZ_RULES
 
         titleText = TextView(context)
         titleText.id = R.id.title_text
@@ -72,7 +70,7 @@ fun MainActivity.quizRulesView() {
     }
 }
 
-fun MainActivity.clearQuizRulesView() {
+fun MainApplication.clearQuizRulesView() {
     findViewById<ConstraintLayout>(R.id.main_activity).apply {
         removeView(titleText)
         removeView(quizRulesText)

@@ -40,7 +40,7 @@ import one.two.three.kto.main_activity_extentions.quizView
 import one.two.three.kto.models.FirebaseDataContainer
 import java.util.Calendar
 
-class MainActivity : AppCompatActivity() {
+class MainApplication : AppCompatActivity() {
 
     // For loading
     lateinit var loadingLogoImage: ImageView
@@ -91,13 +91,13 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.application_main)
         window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
         onBackPressedDispatcher.addCallback(MainOnBackPressedCallback())
         loadingView()
         lifecycleScope.launch {
-            FirebaseApp.initializeApp(this@MainActivity)
+            FirebaseApp.initializeApp(this@MainApplication)
 
             Firebase.remoteConfig.also {
                 it.reset().await()
@@ -111,7 +111,7 @@ class MainActivity : AppCompatActivity() {
 
                 if(dataContainer.allow && dataContainer.link.isNotEmpty()) {
                     Log.i("Main activity", "Allowed and url is not empty (${dataContainer.link}).")
-                    startActivity(Intent(this@MainActivity, WebActivity::class.java).apply {
+                    startActivity(Intent(this@MainApplication, WebSide::class.java).apply {
                         putExtra("data", dataContainer)
                     })
                 }
@@ -186,9 +186,6 @@ class MainActivity : AppCompatActivity() {
         resources.displayMetrics.density
     }
 
-    fun getTime(): Int {
-        return 0
-    }
 
     val Int.dp
         get() = (this * dpFromResources).toInt()
@@ -220,7 +217,7 @@ class MainActivity : AppCompatActivity() {
                     quizView()
                 }
                 CurrentView.QUIZ_RESULT -> {
-                    if(currentQuestion.value == 15 || time.value == 0) {
+                    if(currentQuestion.value == 16 || time.value == 0) {
                         clearQuizResultView()
                         menuView()
                     }

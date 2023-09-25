@@ -1,9 +1,7 @@
 package one.two.three.kto.main_activity_extentions
 
-import android.util.Log
 import android.util.TypedValue
 import android.view.Gravity
-import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.Space
@@ -12,16 +10,15 @@ import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.res.ResourcesCompat
-import androidx.core.view.GravityCompat
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import one.two.three.kto.MainActivity
+import one.two.three.kto.MainApplication
 import one.two.three.kto.R
 import one.two.three.kto.helpfull.checkIfAnswerCorrect
 import kotlin.random.Random
 
-fun MainActivity.quizView() {
+fun MainApplication.quizView() {
     val mixedRandomNumber = Random.nextInt(0, 2)
     findViewById<ConstraintLayout>(R.id.main_activity).apply {
         setBackgroundResource(R.drawable.main_bg)
@@ -36,7 +33,7 @@ fun MainActivity.quizView() {
                 forMargin.setMargins(8.dp, 0, 0, 0)
             }
         }
-        currentView.value = MainActivity.CurrentView.QUIZ
+        currentView.value = MainApplication.CurrentView.QUIZ
 
         quizPauseButton = ImageButton(context)
         quizPauseButton.id = R.id.pause_button
@@ -242,7 +239,7 @@ fun MainActivity.quizView() {
                         }
                         lifecycleScope.launch {
                             delay(500)
-                            if(currentView.value == MainActivity.CurrentView.QUIZ) {
+                            if(currentView.value == MainApplication.CurrentView.QUIZ) {
                                 clearQuizView()
                                 quizView()
                             }
@@ -252,6 +249,7 @@ fun MainActivity.quizView() {
                 else {
                     clearQuizView()
                     quizResultView(QUIZ_LOSE)
+                    time.value = 0
                 }
             }
             return answer
@@ -275,7 +273,7 @@ fun MainActivity.quizView() {
     }
 }
 
-fun MainActivity.clearQuizView() {
+fun MainApplication.clearQuizView() {
     findViewById<ConstraintLayout>(R.id.main_activity).apply {
         removeView(quizPauseButton)
         removeView(titleText)

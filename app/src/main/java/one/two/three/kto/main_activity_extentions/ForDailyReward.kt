@@ -1,7 +1,6 @@
 package one.two.three.kto.main_activity_extentions
 
 import android.util.TypedValue
-import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -12,14 +11,14 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import kotlinx.coroutines.launch
-import one.two.three.kto.MainActivity
+import one.two.three.kto.MainApplication
 import one.two.three.kto.R
 import java.util.Calendar
 
-fun MainActivity.dailyRewardView() {
+fun MainApplication.dailyRewardView() {
     findViewById<ConstraintLayout>(R.id.main_activity).apply {
         setBackgroundResource(R.drawable.main_bg)
-        currentView.value = MainActivity.CurrentView.DAILY_REWARD
+        currentView.value = MainApplication.CurrentView.DAILY_REWARD
 
         setBackButton {
             clearDailyRewardView()
@@ -121,7 +120,7 @@ fun MainActivity.dailyRewardView() {
     }
 }
 
-fun MainActivity.clearDailyRewardView() {
+fun MainApplication.clearDailyRewardView() {
     findViewById<ConstraintLayout>(R.id.main_activity).apply {
         removeView(backButton)
         removeView(titleText)

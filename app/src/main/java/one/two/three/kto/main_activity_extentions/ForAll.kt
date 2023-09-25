@@ -7,10 +7,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.res.ResourcesCompat
-import one.two.three.kto.MainActivity
+import one.two.three.kto.MainApplication
 import one.two.three.kto.R
 
-fun MainActivity.setBackButton(action: (View) -> Unit = {}) {
+fun MainApplication.setBackButton(action: (View) -> Unit = {}) {
     backButton = ImageButton(this)
     backButton.id = R.id.back_button
     backButton.setImageResource(R.drawable.back_icon)
@@ -24,7 +24,7 @@ fun MainActivity.setBackButton(action: (View) -> Unit = {}) {
     backButton.scaleType = ImageView.ScaleType.CENTER_CROP
 }
 
-fun MainActivity.setTitleText(text: Int, toView: Int = R.id.back_button) {
+fun MainApplication.setTitleText(text: Int, toView: Int = R.id.back_button) {
     titleText = TextView(this)
     titleText.text = getString(text)
     titleText.layoutParams = ConstraintLayout.LayoutParams(
