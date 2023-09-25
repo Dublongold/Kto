@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- For loading -->
+    <item name="loading_text" type="id"/>
+    <!-- For menu -->
+    <item name="play_quiz_button" type="id"/>
+    <item name="daily_reward_button" type="id"/>
+    <item name="privacy_policy_button" type="id"/>
+    <!-- For privacy policy -->
+    <!-- Nothing... -->
+    <!-- For daily reward -->
+    <item name="daily_reward_image" type="id"/>
+    <item name="daily_reward_get_button" type="id"/>
+    <item name="daily_reward_text" type="id"/>
+    <item name="daily_reward_timer" type="id"/>
+    <!-- For select quiz -->
+    <!-- Nothing... -->
+    <!-- For quiz -->
+    <item name="quiz_info_container" type="id"/>
+    <item name="completed_quizzes" type="id"/>
+    <item name="smaller_timer" type="id"/>
+    <item name="quiz_question" type="id"/>
+    <item name="pause_button" type="id"/>
+    <item name="info_button" type="id"/>
+    <!-- For quiz rules -->
+    <item name="quiz_rules_text" type="id"/>
+    <!-- For quiz result -->
+    <item name="right_answers" type="id"/>
+    <!-- For all -->
+    <item name="back_button" type="id"/>
+    <item name="title_text" type="id"/>
+</resources>

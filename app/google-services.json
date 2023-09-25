@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "979052901216",
+    "project_id": "bitgames-ffde7",
+    "storage_bucket": "bitgames-ffde7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979052901216:android:51b5141057c00631dce405",
+        "android_client_info": {
+          "package_name": "one.two.three.kto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPPwpdt0mmHmbZF8oQn36A2o7Qmu87r8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979052901216:android:8f38f0f6e82536bcdce405",
+        "android_client_info": {
+          "package_name": "one.two.three.onewin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPPwpdt0mmHmbZF8oQn36A2o7Qmu87r8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

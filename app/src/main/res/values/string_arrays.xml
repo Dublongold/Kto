@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="basketball_questions">
+        <item>What is basketball?</item>
+        <item>In which country was the game basketball invented?</item>
+        <item>Who invented basketball?</item>
+        <item>What is the name of the international basketball federation?</item>
+        <item>How many players play basketball on the court?</item>
+        <item>What does the word \"Basketball\" mean in translation from English?</item>
+        <item>How does the game begin?</item>
+        <item>What is a foul?</item>
+        <item>Throwing the ball into play from behind the sideline or front line is performed within…</item>
+        <item>What is double dribbling?</item>
+        <item>The game stops if?</item>
+        <item>What is an out?</item>
+        <item>What is jogging?</item>
+        <item>If a foul is committed against a player who was in the process of throwing and the ball was thrown into the basket, then:</item>
+        <item>A player performing a free throw must release the ball in…</item>
+    </string-array>
+    <string-array name="basketball_questions_answers">
+        <!-- 1 -->
+        <item>a) is a sports game, the goal of which is to score the ball into the basket.</item>
+        <item>b) it is a sport in which the goal is to score the ball into the goal.</item>
+        <item>c) is a sports game, the goal of which is to score as many balls as possible into the opponent\'s basket</item> <!-- Correct -->
+        <!-- 2 -->
+        <item>a) in France</item>
+        <item>b) in South America</item>
+        <item>c) in the USA</item> <!-- Correct -->
+        <!-- 3 -->
+        <item>a) Henstreet</item>
+        <item>b) Naismith</item>
+        <item>c) Jephart</item> <!-- Correct -->
+        <!-- 4 -->
+        <item>a) FIBA</item> <!-- Correct -->
+        <item>b) FIFA</item>
+        <item>c) FINA</item>
+        <!-- 5 -->
+        <item>a) 10</item> <!-- Correct -->
+        <item>b) 5</item>
+        <item>c) 15</item>
+        <!-- 6 -->
+        <item>a) hand, ball</item>
+        <item>b) basket, ball</item> <!-- Correct -->
+        <item>c) foot, ball</item>
+        <!-- 7 -->
+        <item>a) from throwing the ball into play</item>
+        <item>b) as a greeting</item>
+        <item>c) from the fact that the referee brings the ball into play by throwing it up.</item> <!-- Correct -->
+        <!-- 8 -->
+        <item>a) this is a player\'s penalty for throwing into the basket from a corner.</item> <!-- Correct -->
+        <item>b) it is a punishment of the player who made the push, step.</item>
+        <item>c) this is non-fulfillment of the Rules as a result of personal contact with an opponent or unsportsmanlike conduct.</item>
+        <!-- 9 -->
+        <item>a) 5 seconds</item>
+        <item>b) 3 seconds</item> <!-- Correct -->
+        <item>c) 5 minutes</item>
+        <!-- 10 -->
+        <item>a) driving with two hands;</item>
+        <item>b) dribbling the ball with one hand twice</item> <!-- Correct -->
+        <item>c) driving with two hands at the same time and driving with one hand twice in a row.</item>
+        <!-- 11 -->
+        <item>a) the player receives 7 fouls;</item>
+        <item>b) less than two players remain on the court;</item>
+        <item>c) score 50:0</item> <!-- Correct -->
+        <!-- 12 -->
+        <item>a) gate</item>
+        <item>b) site boundaries</item>
+        <item>c) the zone outside the court lines</item> <!-- Correct -->
+        <!-- 13 -->
+        <item>a) it is prohibited to move with one or two legs after stopping the dribbling of the ball or with the supporting leg before dribbling the ball.</item>
+        <item>b) this is running with the ball in the hands</item> <!-- Correct -->
+        <item>c) this is dribbling the ball with two hands</item>
+        <!-- 14 -->
+        <item>a) it counts and the player is given the right to one free throw;</item> <!-- Correct -->
+        <item>b) it does not count and the right to two free throws is granted;</item>
+        <item>c) it does not count and the right to three free throws is granted.</item>
+        <!-- 15 -->
+        <item>a) three seconds;</item>
+        <item>b) five seconds;</item> <!-- Correct -->
+        <item>c) five minutes.</item>
+    </string-array>
+    <string-array name="football_questions">
+        <item>In which country and in which city was the 2019 Club World Cup Final held?</item>
+        <item>Who became the winner of FIFA 2019?</item>
+        <item>Who is recognized as the best goalkeeper in 2019 according to FIFA?</item>
+        <item>Who is the top scorer in the history of the Portuguese national team?</item>
+        <item>In which country did football appear and begin to develop?</item>
+        <item>Which country hosted the first FIFA World Cup?</item>
+        <item>What is the name of the goal that a footballer scored against his own goal?</item>
+        <item>How many players are on the playing field at the same time on both sides?</item>
+        <item>The team from which country has won the World Cup most often and how many times?</item>
+        <item>What are the correct dimensions of a standard football goal?</item>
+        <item>What is the correct abbreviation for UEFA?</item>
+        <item>What did the player who scored 3 goals in one match draw up?</item>
+        <item>How many sizes of soccer balls are there?</item>
+        <item>What is the name of the most honorable personal award for a football player?</item>
+        <item>Which country\'s football club won the Champions League 5 times in a row in the 20th century? What is it called?</item>
+    </string-array>
+    <string-array name="football_questions_answers">
+        <!-- 1 -->
+        <item>Yokohama (Japan)</item>
+        <item>Abu Dhabi (UAE)</item>
+        <item>London (England)</item>
+        <item>Doha (Qatar)</item> <!-- Correct -->
+        <!-- 2 -->
+        <item>Flamengo (France)</item>
+        <item>Bavaria (Germany)</item>
+        <item>Liverpool (England)</item> <!-- Correct -->
+        <item>Manchester United (England)</item>
+        <!-- 3 -->
+        <item>Alisson from Liverpool</item> <!-- Correct -->
+        <item>Thibault Courtois of Real Madrid</item>
+        <item>Jan Oblak from Atlético Madrid</item>
+        <item>David de Gea of Manchester United</item>
+        <!-- 4 -->
+        <item>Matijs de Ligt</item>
+        <item>Cristiano Ronaldo</item> <!-- Correct -->
+        <item>Lionel Messi</item>
+        <item>Virgil van Dijk</item>
+        <!-- 5 -->
+        <item>Yokohama (Japan)</item>
+        <item>England</item> <!-- Correct -->
+        <item>Spain</item>
+        <item>Portugal</item>
+        <!-- 6 -->
+        <item>Uruguay</item> <!-- Correct -->
+        <item>France</item>
+        <item>Spain</item>
+        <item>England</item>
+        <!-- 7 -->
+        <item>free kick</item>
+        <item>\"Dead Ball\"</item>
+        <item>Own goal</item> <!-- Correct -->
+        <item>False maneuver</item>
+        <!-- 8 -->
+        <item>30 players</item>
+        <item>24 players</item>
+        <item>11 players</item>
+        <item>22 players</item> <!-- Correct -->
+        <!-- 9 -->
+        <item>Brazil (5 wins)</item> <!-- Correct -->
+        <item>England (4 wins)</item>
+        <item>Spain (4 wins)</item>
+        <item>Germany (3 wins)</item>
+        <!-- 10 -->
+        <item>7.22 by 2.45 meters</item>
+        <item>6.9 by 2.11 meters</item>
+        <item>7.11 by 2.33 meters</item>
+        <item>7.32 by 2.44 meters</item> <!-- Correct -->
+        <!-- 11 -->
+        <item>Commonwealth of European football absorptions</item>
+        <item>Union of European Football Associations</item> <!-- Correct -->
+        <item>Union of European-integrated football associations</item>
+        <item>Collection of European football associations.</item>
+        <!-- 12 -->
+        <item>triple sec</item>
+        <item>own goal</item>
+        <item>Hat-trick</item> <!-- Correct -->
+        <item>Handicap</item>
+        <!-- 13 -->
+        <item>5 sizes</item> <!-- Correct -->
+        <item>2 sizes</item>
+        <item>3 sizes</item>
+        <item>6 sizes</item>
+        <!-- 14 -->
+        <item>Champion Figurine</item>
+        <item>Golden ball</item> <!-- Correct -->
+        <item>Champion Cup</item>
+        <item>Golden boot</item>
+        <!-- 15 -->
+        <item>Real Madrid (Spain)</item> <!-- Correct -->
+        <item>Juventus (Italy)</item>
+        <item>Manchester City (England)</item>
+        <item>Arsenal (England)</item>
+    </string-array>
+</resources>
